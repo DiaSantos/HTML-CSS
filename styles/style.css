@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --cor-primaria: #000000; /* Preto profundo */
+    --cor-secundaria: #F6F6F6; /* Branco suave */
+    --cor-terciaria: #22D4FD; /* Azul vibrante */
+    --cor-hover: #272727; /* Cinza escuro para hover */
+
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;/* Inclui bordas e padding na largura e altura totais */
+    background-color: var(--cor-primaria);/* Cor de fundo preta */
+    color: var(--cor-secundaria);/* Cor do texto branca */
+}
+.navegacao{
+    display: flex;/* Usando flexbox para layout */
+    justify-content: flex-start;/* Alinhando itens à esquerda */
+    padding: 2% 0% 0% 10%;/* Espaçamento interno */
+}
+
+.navegacao__menu{
+    display: flex;/* Usando flexbox para layout */
+    gap: 80px;/* Espaço entre os itens */
+}
+.navegacao__link{
+    font-family: var(--font-secundaria);
+    font-size: 1.125rem;/* Tamanho da fonte */
+    font-weight: 500;/* Peso da fonte */
+    color: var(--cor-terciaria);
+    text-decoration: none;/* Removendo sublinhado */
+    
+}
+
+.apresentacao{
+    padding: 5% 10%;
+    display: flex;/* Usando flexbox para layout */
+    align-items: center;/* Alinhando itens ao centro verticalmente */
+    justify-content: space-between;/* Espaço entre os itens */
+    gap: 82px;/* Espaço entre os itens */
+}
+.apresentacao__conteudo{
+    width: 50%;/* Largura fixa para o conteúdo */
+    display: flex;/* Usando flexbox para layout */
+    flex-direction: column;/* Direção da coluna */
+    gap: 40px;/* Espaço entre os itens */
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 1.75rem ;/* Tamanho da fonte */
+    font-family: var(--font-principal);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.3125rem;/* Tamanho da fonte */
+    font-family: var(--font-secundaria);
+}
+
+.redes-sociais{
+    display: flex;/* Usando flexbox para layout */
+    justify-content: space-between;/* Espaço entre os itens */
+    flex-direction: column;/* Direção da coluna */
+    align-items: center;/* Centralizando os itens */
+    gap: 20px;/* Espaço entre os itens */
+    padding-bottom: 30px;/* Espaço inferior */
+}
+
+.apresentacao__link__subtitle{
+    font-size: 1.25rem;/* Tamanho da fonte */
+    font-family: var(--font-principal);/* Fonte personalizada */
+    font-weight: 400;/* Peso da fonte */
+    margin-bottom: 10px;/* Espaço inferior */
+}
+
+.botons-link{
+    display: flex;/* Usando flexbox para layout */
+    justify-content: center;/* Centralizando os itens */
+    gap: 15px;/* Espaço entre os itens */
+    width: 50%;/* Largura fixa */
+    text-align: center;/* Centralizando o texto */
+    border-radius: 8px;/* Bordas arredondadas */
+    font-size: 1.1875rem;/* Tamanho da fonte */
+    font-weight: 600;/* Peso da fonte */
+    padding: 21.5px 0;/* Espaçamento interno */
+    text-decoration: none;/* Removendo sublinhado */
+    color: var(--cor-secundaria);/* Cor do texto */   
+    font-family: var(--font-secundaria);/* Fonte personalizada */
+    border: 2px solid var(--cor-terciaria);/* Borda azul */
+}
+
+.foto-perfil {
+    padding: 20px;/* Espaçamento interno */
+    border-radius: 10%;/* Bordas arredondadas */
+    overflow: hidden;/* Ocultando excesso de conteúdo */
+
+}
+
+.botons-link:hover{
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+   width: 50%;
+}
+
+.footer__texto{
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px) { 
+    
+    .navegacao {
+        padding: 10%;/* Espaçamento interno */
+    }
+
+    .navegacao__menu{
+        justify-content: center;
+        transform: translateX(55%);
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 5%;
+    }
+}
